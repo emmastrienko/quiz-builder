@@ -114,6 +114,130 @@ const QUIZZES: SeedQuiz[] = [
       },
     ],
   },
+  {
+    title: 'Web Development Fundamentals',
+    questions: [
+      {
+        type: 'input',
+        text: 'Which HTTP status code indicates that a resource was moved permanently?',
+        correctAnswer: '301',
+      },
+      {
+        type: 'checkbox',
+        text: 'Which of these are valid HTTP methods?',
+        options: ['GET', 'POST', 'FETCH', 'PATCH'],
+        correctAnswers: ['GET', 'POST', 'PATCH'],
+      },
+      {
+        type: 'boolean',
+        text: 'In a REST API, is DELETE the idiomatic method for removing a resource?',
+        correctAnswer: true,
+      },
+      {
+        type: 'boolean',
+        text: 'In JavaScript, does the === operator perform type coercion?',
+        correctAnswer: false,
+      },
+      {
+        type: 'input',
+        text: 'What SQL clause is used to filter rows after grouping?',
+        correctAnswer: 'HAVING',
+      },
+    ],
+  },
+  {
+    title: 'World Geography Challenge',
+    questions: [
+      {
+        type: 'input',
+        text: 'What is the capital city of Australia?',
+        correctAnswer: 'Canberra',
+      },
+      {
+        type: 'checkbox',
+        text: 'Which of these countries are landlocked?',
+        options: ['Bolivia', 'Nepal', 'Vietnam', 'Switzerland'],
+        correctAnswers: ['Bolivia', 'Nepal', 'Switzerland'],
+      },
+      {
+        type: 'boolean',
+        text: 'Is the ancient city of Petra located in Jordan?',
+        correctAnswer: true,
+      },
+      {
+        type: 'input',
+        text: 'What is the largest ocean on Earth by surface area?',
+        correctAnswer: 'Pacific',
+      },
+      {
+        type: 'boolean',
+        text: 'Is Asia the largest continent by land area?',
+        correctAnswer: true,
+      },
+    ],
+  },
+  {
+    title: 'Science & Nature Expeditions',
+    questions: [
+      {
+        type: 'input',
+        text: 'What is the chemical symbol for gold?',
+        correctAnswer: 'Au',
+      },
+      {
+        type: 'checkbox',
+        text: 'Which planets in our solar system have rings?',
+        options: ['Saturn', 'Jupiter', 'Uranus', 'Mars'],
+        correctAnswers: ['Saturn', 'Jupiter', 'Uranus'],
+      },
+      {
+        type: 'boolean',
+        text: 'Do octopuses have three hearts?',
+        correctAnswer: true,
+      },
+      {
+        type: 'input',
+        text: 'Which gas do plants primarily absorb for photosynthesis?',
+        correctAnswer: 'Carbon dioxide',
+      },
+      {
+        type: 'boolean',
+        text: 'Can sound travel through the vacuum of space?',
+        correctAnswer: false,
+      },
+    ],
+  },
+  {
+    title: 'History & Curiosities',
+    questions: [
+      {
+        type: 'boolean',
+        text: 'Was Napoleon Bonaparte actually shorter than the average man of his time?',
+        correctAnswer: false,
+      },
+      {
+        type: 'input',
+        text: 'In which year did the Great Fire of London take place?',
+        correctAnswer: '1666',
+      },
+      {
+        type: 'checkbox',
+        text: 'Which of these inventions existed before 1900?',
+        options: ['The telephone', 'The airplane', 'The fax machine', 'The electric light bulb'],
+        correctAnswers: ['The telephone', 'The fax machine', 'The electric light bulb'],
+      },
+      {
+        type: 'input',
+        text: 'Which civilization built the city of Machu Picchu?',
+        correctAnswer: 'Incas',
+      },
+      {
+        type: 'boolean',
+        text: 'Did Vikings reach North America before Columbus?',
+        correctAnswer: true,
+      },
+    ],
+  },
 ];
 
 function serializeQuestion(question: SeedQuestion, index: number) {
