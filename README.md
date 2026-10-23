@@ -134,12 +134,15 @@ cd backend
 npm run db:seed
 ```
 
-The seeder is idempotent (existing quizzes are skipped) and creates three fun
-trivia quizzes with all three question types:
-
+The seeder is idempotent (existing quizzes are skipped) and creates seven
+themed quizzes covering all three question types:
 - **Tech & Code Trivia** — 5 questions
 - **Movie & TV Trivia** — 5 questions
 - **Food for Thought** — 5 questions
+- **Web Development Fundamentals** — 5 questions
+- **World Geography Challenge** — 5 questions
+- **Science & Nature Expeditions** — 5 questions
+- **History & Curiosities** — 5 questions
 
 or use the UI at http://localhost:3000/create.
 
