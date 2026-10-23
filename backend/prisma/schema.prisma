@@ -1,0 +1,32 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Quiz {
+  id        String   @id @default(cuid())
+  title     String
+  createdAt DateTime @default(now())
+  questions Question[]
+
+  @@map("quizzes")
+}
+
+model Question {
+  id            String  @id @default(cuid())
+  quizId        String
+  quiz          Quiz    @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  type          String
+  text          String
+  options       String?
+  correctAnswer String?
+  position      Int
+
+  @@index([quizId])
+  @@map("questions")
+}

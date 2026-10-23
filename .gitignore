@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# builds
+dist/
+.next/
+out/
+
+# env / secrets
+.env
+.env.local
+.env*.local
+
+# databases
+*.db
+*.sqlite
+
+# logs & misc
+*.log
+.DS_Store
+Thumbs.db
